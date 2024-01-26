@@ -1,0 +1,24 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+    <!--About page-->
+    <section>
+        <div class="d-flex flex-column align-items-center">
+            <p class="section-name d-inline-block mb-2">About Us</p>
+            <p class="fs-4 my-5 text-black text-center">THE BEST PAINTING COMPANY IN THE SAN FRANCISCO BAY AREA</p>
+            <div class="w-75 my-5">
+                <p class="lh-lg">With a rich history spanning three decades, Rivas Pro Painting Inc. stands as a testament to expertise and excellence in the painting industry. Founded by Enrique Rafael, our company has evolved into a trusted name in the field, with a commitment to quality 
+                    craftsmanship and customer satisfaction. Over the course of 30  years, we have honed our skills, building a team of seasoned professionals dedicated to delivering exceptional painting services. From residential projects to large-scale commercial endeavors, 
+                    Rivas Pro Painting Inc. brings a wealth of experience to every job. Our journey has been marked by a passion for transforming spaces and creating lasting impressions through the artistry of paint. With a foundation built on trust and reliability, we continue 
+                    to thrive, providing top-notch solutions to meet the diverse needs of our valued clients. We can't wait to assist you with your project. Please feel free to call us if you need any help or have inquiries.
+                </p>
+            </div>
+            <div class="mb-5">
+                <a class="btn btn-danger quote-button mt-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form" >Get a <strong>FREE</strong> quote!</a>
+                <p class="mx-3 fw-bold d-inline-block text-center">or</p>
+                <a href="tel:925-384-7467" class="btn btn-danger quote-button mt-4">Call us</a>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

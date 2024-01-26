@@ -1,0 +1,45 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <section class="background-container">
+        <div class="content-section d-flex justify-content-center flex-column align-items-center background-container border border-1" id="quote-form">
+
+            <p class="section-name" style="color: white;">Get a <strong>FREE</strong> Quote</p>
+            <small class="text-white">By Rivas Pro Painting Inc.</small>
+            <form method="post" action="." class="form-group quote-form">
+                {% csrf_token %}
+                
+            
+                <label>First Name: <span style="color: orange;">*</span></label>
+                <p>
+                    {{form.first_name}}
+                </p>
+                <label>Last Name: <span style="color: orange;">*</span></label>
+                <p>
+                    {{form.last_name}}
+                </p>
+                <label>Email: <span style="color: orange;">*</span></label>
+                <p>
+                    {{form.user_email}}
+                </p>
+                <label>Phone number: <span style="color: orange;">*</span></label>
+                <p>
+                    {{form.user_phone}}
+                </p>
+                <label>What type of painting: <span style="color: orange;">*</span></label>
+                <p>
+                    {{form.job}}
+                </p>
+                <label>Job description: <span style="color: orange;">*</span></label>
+                <p>
+                    {{form.job_desc}}
+                </p>        
+                <button type="submit" class="btn btn-danger mb-5 mt-3 w-25">Submit</button>
+            </form>
+            
+        </div>
+    </section>
+
+{% endblock content%}

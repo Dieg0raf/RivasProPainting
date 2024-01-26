@@ -1,0 +1,76 @@
+/* Add your custom styles here */
+.image-container,
+.image-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.image,
+.image2 {
+  max-width: 100%;
+  max-height: 280px;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+  width: 442px;
+  padding-bottom: 30px;
+  object-fit: cover;
+}
+
+.image-container.show,
+.image-container2.show {
+  max-height: none; /* Adjust as needed */
+}
+
+.image.show,
+.image2.show {
+  opacity: 1;
+}
+
+.car-work {
+  width: 1500px;
+}
+
+
+/* Interior carousel */
+.c-img {
+  overflow: hidden;
+  max-height: 250px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.c-item {
+  width: auto;
+}
+
+
+@media (max-width: 1450px) {
+  .image {
+    width: 342px;
+    padding-bottom: 30px;
+  }
+
+  .image-container.show {
+    max-height: 10000px; /* Adjust as needed */
+  }
+  .car-work {
+    width: auto;
+  }
+
+  .c-item {
+    margin-bottom: 20px;
+  }
+
+  .c-img {
+    height: 250px;
+  }
+}
+
+#inter-work-sec,
+#exter-work-sec {
+  background-color: #F2F2F2;
+}

@@ -1,0 +1,150 @@
+.website-logo-image {
+    height: 100px;
+    width: 100px;
+}
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Junge', cursive;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.quote-button {
+    width: 175px !important; 
+    height: 60px !important;
+    padding-top: 17px;
+}
+
+.quote-button:hover {
+    box-shadow: 0 0 20px red;
+}
+
+@media (max-width: 989px) {
+    .dropdown-menu {
+        max-height: 125px;
+        max-width: 50%;
+    }
+
+    .nav-link {
+        display: inline-block;
+        padding-bottom: 10px
+    }
+}
+
+@media (min-width: 576px) {
+    .dropdown-menu {
+        opacity: 0;
+        display: block;
+        transition: all 1.5s !important;
+        pointer-events: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+.dropdown-menu {
+    max-height: 270px;
+    overflow-y: scroll;
+    background-color: #ffffff;
+    padding: 0;
+    border-radius: 10px;
+    max-width: 270px;
+}
+
+.dropdown-item {
+    color: rgba(0, 0, 0, 0.75);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(204, 204, 204);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dropdown-item:hover {
+    background-color: #F39200; 
+}
+
+.nav-link {
+    position: relative;
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: gray !important;
+}
+
+
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    height: 2px;
+    background-color: rgb(240, 0, 0);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    visibility: visible;
+}
+
+.site-header {
+    transition: height 0.3s ease-in-out;
+}
+
+.site-header.scrolled {
+    height: 45px; /* Set the desired height when scrolled */
+}
+
+.logo-space-contact {
+     padding-left: 10px;
+}
+
+
+.contact-text {
+    padding-left: 50px !important;
+    padding-right: 0px !important;
+}
+
+#email-link {
+    text-decoration: none;
+    color: white;
+}
+
+
+.main-text-footer {
+    border-bottom: solid;
+    border-bottom-color: #F39200;
+    width: 78%;
+}
+
+.phone-num, .phone-num:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+#footer {
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+}

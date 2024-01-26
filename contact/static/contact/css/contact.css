@@ -1,0 +1,27 @@
+.line-for-form {
+    height: 50px;
+}
+
+.line-for-form:hover,
+.area-for-form:hover {
+    box-shadow: 0 0 20px red; /* Set the box shadow (offset-x, offset-y, blur-radius, color) */
+}
+
+
+.background-container {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(170deg, #051f45ee 75%, #fff 25%);
+}
+
+.quote-form {
+    padding: 40px;
+    width: 500px;
+}
+
+.quote-form label{
+    color: white;
+    margin-bottom: 8px;
+}

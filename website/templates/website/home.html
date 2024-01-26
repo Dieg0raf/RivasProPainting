@@ -1,0 +1,448 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section>
+    <div class="bg-img"style="background-image: url('{% static 'website/images/home-images/background-image-1.jpg' %}');"     >
+        <div class="blur">
+            
+        </div>
+        <div class="content d-sm-flex flex-column align-items-center gap-5 overflow-hidden">
+            <p class="intro-text-name">Rivas Pro Painting Inc.</p>
+            <p class="intro-text-info">Your local Painting Company</p>
+            <form class="form-inline" id="intro-button">
+                <a class="btn btn-danger quote-button mt-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form" >Get a <strong>FREE</strong> quote!</a>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--Service Areas-->
+<section class="pb-5 text-center d-flex flex-column" id="service-section">
+    <div>
+        <p class="section-name d-inline-block">Service Areas</p>
+        <p class="areas-text p-5">Rivas Pro Painting Inc. serving the East Bay and surrounding areas</p>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-xl-6 col-xs-12">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d806207.4759908175!2d-123.07966425070578!3d37.87788365226468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808583a3a688d7b5%3A0x8c891b8457461fa9!2sSan%20Francisco%20Bay%20Area%2C%20CA!5e0!3m2!1sen!2sus!4v1704583737481!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="col-xl-6 pt-4 col-xs-12 align-items-center">
+            <ul id="areas-of-service">
+                <li>Berkley</li>
+                <li>Orinda</li>
+                <li>Alamo</li>
+                <li>Danville</li>
+                <li>Moraga</li>
+                <li>Concord</li>
+                <li>Walnut Creek</li>
+                <li>Lafayette</li>
+                <li>Oakland</li>
+                <li>San Francisco</li>
+                <li>Martinez</li>
+                <li>San Ramon</li>
+                <li>Dublin</li>
+                <li>Pleasanton</li>
+                <li>Antioch</li>
+                <li>Brentwood</li>
+                <li>And many more!</li>
+            </ul>
+            <a class="btn btn-danger quote-button p-3 mt-5" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+        </div>
+    </div>
+</section>
+
+<!--Residential and Commercial-->
+<section class="pb-5 text-center" id="main-services">
+    <div class="row justify-content-evenly" id="res-com-sec">
+        <div class="col-7 col-md-3 pb-5 res-com-sec-cards d-flex flex-column" >
+            <p class="section-name d-inline-block res-com-heading">Residential</p>
+            <div class="card text-center card-whole flex-fill">
+                <img class="com-res-cards-img" src="{% static 'website/images/home-images/residential-stock.jpg' %}" alt="">
+                <div class="card-body d-flex flex-column">
+                    <p class="p-4">
+                        From interior to exterior painting, our skilled team is dedicated to rejuvenating and elevating your home's aesthetic appeal while minimizing
+                        any inconvenience to your routine. When in search of a nearby paint contractor, trust Rivas Pro Painting to meet your needs!
+                    </p>
+                    <div class="d-flex justify-content-center mt-auto">
+                        <a class="btn btn-danger quote-button mb-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-7 col-md-3 pb-5 res-com-sec-cards d-flex flex-column">
+            <p class="section-name d-inline-block res-com-heading">Commercial</p>
+            <div class="card text-center card-whole flex-fill">
+                <img class="com-res-cards-img" src="{% static 'website/images/home-images/commerical-tab-image.jpeg' %}" alt="">
+                <div class="card-body d-flex flex-column">
+                    <p class="p-4">
+                        Specializing in commercial painting, Rivas Pro Painting Inc. brings a professional touch to businesses, offering meticulous surface preparation and skilled application of high-quality
+                        paints for a durable and appealing finish. Their expert team understands the unique requirements of commercial spaces, delivering top-notch services that enhance the aesthetic appeal and longevity of diverse establishments.
+                    </p>
+                    <div class="d-flex justify-content-center mt-auto">
+                        <a class="btn btn-danger quote-button mb-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Why Choose? fixing-->
+<section class="text-white d-sm-flex align-items-center p-4 text-center" id="why-choose-section">
+    <h2 class="ms-5 h-25">Why Choose Rivas Pro Painting?</h2>
+    <div class="d-flex justify-content-around flex-grow-1 pt-5 pt-sm-0">
+        <div class="d-flex flex-column">
+            <div class="d-sm-flex align-items-center pb-5">
+                <img class="check-mark-logo" src="{% static 'website/images/logos/check-mark-logo.svg' %}">
+                <p class="m-0 ps-2">Locally Owned</p>
+            </div>
+            <div class="d-sm-flex align-items-center">
+                <img class="check-mark-logo" src="{% static 'website/images/logos/check-mark-logo.svg' %}">
+                <p class="m-0 ps-2">Quick and Clean paint work</p>
+            </div>        
+        </div>
+    
+        <div class="d-flex flex-column">
+            <div class="d-sm-flex align-items-center pb-5">
+                <img class="check-mark-logo" src="{% static 'website/images/logos/check-mark-logo.svg' %}">
+                <p class="m-0 ps-2">Within Budget</p>
+            </div>
+            <div class="d-sm-flex align-items-center">
+                <img class="check-mark-logo" src="{% static 'website/images/logos/check-mark-logo.svg' %}">
+                <p class="m-0 ps-2">Professional & Licensed Painters</p>
+            </div>
+        </div>
+
+        <div class="d-sm-flex flex-column">
+            <div class="d-sm-flex align-items-center pb-5">
+                <img class="check-mark-logo" src="{% static 'website/images/logos/check-mark-logo.svg' %}">
+                <p class="m-0 ps-2">Handyman Services</p>
+            </div>
+            <div class="d-sm-flex align-items-center">
+                <img class="check-mark-logo" src="{% static 'website/images/logos/check-mark-logo.svg' %}">
+                <p class="m-0 ps-2">30+ years of Experience</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Our Interior services-->
+<section class="d-md-flex align-items-center justify-content-center flex-column py-sm-5 text-center border-bottom border-black border-3" id="exterior-services">
+    <p class="section-name d-inline-block">Our Interior services</p>
+    <div class="container pt-5">
+        <div class="row gx-5">
+            <div class="col-sm-12 col-md-4 pb-5" id="column">
+                <div class="card-whole card text-center h-100">
+                    <img class="com-res-cards-img" src="https://media.istockphoto.com/id/186741762/photo/house-painter-painting-residential-home-interior.jpg?s=612x612&w=0&k=20&c=XM_ms7xYWsLEJkkR9iJ9XR4hOqFLb4vI4a3n9qjyH10=">
+                    <h3 class="card-title m-0 py-3">Interior Painting & Removal</h3>
+                    <div class="card-body com-res-cards-body d-flex flex-column">
+                        <p class="p-4 flex-grow-1">
+                            Rivas Pro Painting Inc. specializes in interior painting and removal, providing a personalized and renewed look for both home and commercial areas. Their expert personnel precisely prepare surfaces, apply premium paints, and effectively 
+                            remove previous coatings, resulting in a faultless finish that fits their clients' individual style preferences.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-danger quote-button mb-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 pb-5">
+                <div class="card-whole card text-center h-100">
+                    <img class="com-res-cards-img" src="{% static 'website/images/home-images/cabinet-card-image.jpg' %}">
+                    <h3 class="card-title m-0 py-3">Cabinet Painting</h3>
+                    <div class="card-body com-res-cards-body d-flex flex-column">
+                        <p class="p-4 flex-grow-1">
+                            Elevating kitchens and interiors, Rivas Pro Painting Inc. specializes in cabinet painting, employing precision and expertise to transform outdated cabinets into stylish focal points. Their skilled craftsmen meticulously prepare surfaces
+                            , apply quality finishes, and ensure a durable, high-quality result, providing clients with a refreshed and modernized living space.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-danger quote-button mb-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 pb-5">
+                <div class="card-whole card text-center h-100">
+                    <img class="com-res-cards-img" src="{% static 'website/images/home-images/drywall-card-image.jpg' %}">
+                    <h3 class="card-title m-0 py-3">Dry Wall & Plaster</h3>
+                    <div class="card-body com-res-cards-body d-flex flex-column">
+                        <p class="p-4 flex-grow-1">
+                            Rivas Pro Painting Inc. provides expert drywall and plastering services, methodically repairing and refining surfaces to produce a smooth and flawless canvas for interior spaces. 
+                            Their trained craftsmen use industry-leading procedures to provide a seamless integration that improves both the visual appeal and structural integrity of residential and commercial properties.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-danger quote-button mb-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="row gx-5">
+            <div class="col-sm-12 col-md-4 pb-5">
+                <div class="card-whole card text-center h-100">
+                    <img class="com-res-cards-img" src="{% static 'website/images/home-images/wallpaper-card-image.jpeg' %}">
+                    <h3 class="card-title m-0 py-3">Wallpaper Removal & Installation</h3>
+                    <div class="card-body com-res-cards-body d-flex flex-column">
+                        <p class="p-4 flex-grow-1">
+                            Rivas Pro Painting Inc. specializes in wallpaper removal and installation, providing skilled craftsmanship and attention to detail for a smooth and individualized décor
+                            makeover in both home and commercial settings. Their expert professionals ensure exact application and removal, resulting in a refined ambiance that suits their clients' individual style choices.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-danger quote-button mb-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 pb-5">
+                <div class="card-whole card text-center h-100">
+                    <img class="com-res-cards-img" src="{% static 'website/images/home-images/baseboard-card-image.webp' %}">
+                    <h3 class="card-title m-0 py-3">Trim & Baseboard Painting</h3>
+                    <div class="card-body com-res-cards-body d-flex flex-column">
+                        <p class="p-4 flex-grow-1">
+                            Transforming interiors, Rivas Pro Painting Inc. excels in trim and baseboard painting, meticulously applying quality paints to enhance and protect these architectural elements. Their attention to detail ensures 
+                            a flawless finish, bringing elegance and cohesion to residential and commercial spaces.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-danger quote-button mb-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 pb-5">
+                <div class="card-whole card text-center h-100">
+                    <img class="com-res-cards-img" src="{% static 'website/images/home-images/crownmolding-card-image.jpg' %}">
+                    <h3 class="card-title m-0 py-3">Crow/Trim Molding & Installation</h3>
+                    <div class="card-body com-res-cards-body d-flex flex-column">
+                        <p class="p-4 flex-grow-1">
+                            With a focus on precision and craftsmanship, Rivas Pro Painting Inc. expertly handles crown and trim molding installation, enhancing interior spaces
+                            with meticulous detailing. Their skilled team ensures seamless integration, bringing sophistication and character to residential and commercial interiors through impeccable molding and installation techniques.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-danger quote-button mb-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-danger ext-int-main-button mb-2 mb-md-5" href="{% url 'website-our-work' %}#inter-work-sec">Our Interior Work!</a>
+        </div>
+    </div>
+</section>
+
+<!--Our Exterior services-->
+<section class="d-md-flex align-items-center justify-content-center flex-column py-sm-5 text-center" id="exterior-services">
+    <p class="section-name d-inline-block">Our Exterior services</p>
+    <div class="container pt-5">
+        <div class="row gx-5">
+            <div class="col-sm-12 col-md-4 pb-5" id="column">
+                <div class="card-whole card text-center h-100">
+                    <img class="com-res-cards-img" src="{% static 'website/images/home-images/exterior-card-image.webp' %}">
+                    <h3 class="card-title m-0 py-3">Exterior Painting</h3>
+                    <div class="card-body com-res-cards-body d-flex flex-column">
+                        <p class="p-4 flex-grow-1">
+                            Rivas Pro Painting Inc. offers reliable exterior painting services for a variety of applications. They have extensive experience painting a wide range of surfaces 
+                            and materials, including stucco, wood, vinyl or aluminum siding, brick, cedar shingles, and garage doors.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-danger quote-button mb-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 pb-5">
+                <div class="card-whole card text-center h-100">
+                    <img class="com-res-cards-img" src="{% static 'website/images/home-images/staining-card-image.jpg' %}">
+                    <h3 class="card-title m-0 py-3">Staining & Varnishing</h3>
+                    <div class="card-body com-res-cards-body d-flex flex-column">
+                        <p class="p-4 flex-grow-1">
+                            Rivas Pro Painting Inc. excels in staining and varnishing services, employing meticulous techniques to enhance wood surfaces. Their skilled craftsmen carefully apply premium stains
+                            and varnishes, ensuring a lasting and beautiful finish that brings out the natural richness of the wood in homes and commercial spaces.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-danger quote-button mb-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 pb-5">
+                <div class="card-whole card text-center h-100">
+                    <img class="com-res-cards-img" src="{% static 'website/images/home-images/stucco-card-image.jpg' %}">
+                    <h3 class="card-title m-0 py-3">Stucco Repairs & Painting</h3>
+                    <div class="card-body com-res-cards-body d-flex flex-column">
+                        <p class="p-4 flex-grow-1">
+                            Rivas Pro Painting Inc. is renowned for their expertise in stucco repairs and painting, seamlessly blending restoration and aesthetics. Utilizing advanced techniques, their skilled team
+                            ensures thorough stucco repairs and expertly applies quality paints, resulting in a durable and visually appealing finish for residential and commercial properties.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-danger quote-button mb-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="row gx-5">
+            <div class="col-sm-12 col-md-4 pb-5">
+                <div class="card-whole card text-center h-100">
+                    <img class="com-res-cards-img" src="{% static 'website/images/home-images/siding-card-image.jpeg' %}">
+                    <h3 class="card-title m-0 py-3">Siding Repairs</h3>
+                    <div class="card-body com-res-cards-body d-flex flex-column">
+                        <p class="p-4 flex-grow-1">
+                            Specializing in siding repairs, Rivas Pro Painting Inc.'s skilled professionals adeptly address damages, replacing and restoring siding with precision and care. Their meticulous approach ensures a seamless and 
+                            durable repair, enhancing the structural integrity and curb appeal of residential and commercial properties.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-danger quote-button mb-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 pb-5">
+                <div class="card-whole card text-center h-100">
+                    <img class="com-res-cards-img" src="{% static 'website/images/home-images/powerwashing-card-image.jpg' %}">
+                    <h3 class="card-title m-0 py-3">Power Washing</h3>
+                    <div class="card-body com-res-cards-body d-flex flex-column">
+                        <p class="p-4 flex-grow-1">
+                            Power washing is an essential step in painting the exterior of your home. Rivas Pro Painting Inc. uses this method to remove mildew, oil, and old paint from your surface, allowing new paint to adhere more effectively.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-danger quote-button mb-4 com-res-tabs-btn" href="{% url 'website-contact' %}#quote-form">Get a <strong>FREE</strong> quote!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-danger ext-int-main-button mb-2 mb-md-5" href="{% url 'website-our-work' %}#exter-work-sec">Our Exterior Work!</a>
+        </div>
+    </div>
+</section>
+
+<!--Review Section-->
+
+<section class="d-flex justify-content-center align-items-center" id="review-section">
+   <div class="bg-danger" id="review-bg">
+       <div class="title d-flex justify-content-center align-items-center">
+           <p class="section-name d-inline-block text-white p-3 p-md-5">What our clients have to say about us</p>
+       </div>
+       <div id="carouselExampleCaptions" class="carousel slide">
+           <div class="carousel-indicators">
+             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           </div>
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+               <div class="row p-8 p-md-4 p-lg-5">
+                   <div class="col-md-4 md-3">
+                       <div class="card text-center carousel-cards m-5">
+                           <img class="carousel-cards-images" src="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_120x120_v2@2x.yji-48e1eaa758eb78c47d5c.png" alt="">
+                           <div class="card-body">
+                               <img class="yelp-review-stars py-2" src="{% static 'website/images/logos/yelp-5-star.png' %}" alt="">
+                               <h4>James C. <br> <span>San Francisco, CA</span></h4>
+                               <p class="card-text">"Enrique and his staff did an outstanding job in painting the exterior of our house. Enrique also has very good
+                                   concept of choosing the right color of paint for our house.
+                                   Will definitely ask him again if we decides to paint the interior of our house. Thanks Enrique. Job well done."
+                               </p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-4 md-3">
+                       <div class="card text-center carousel-cards m-5">
+                           <img class="carousel-cards-images" src="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_120x120_v2@2x.yji-48e1eaa758eb78c47d5c.png" alt="">
+                           <div class="card-body">
+                               <img class="yelp-review-stars py-2" src="{% static 'website/images/logos/yelp-5-star.png' %}">
+                               <h4>Hoda A. <br> <span>Walnut Creek, CA</span></h4>
+                               <p class="card-text">"I hired them to repaint my kitchen cabinets. I chose the wrong color , and they made time to return a couple of days later to redo the cabinets. They changed the hinges and door knobs for me. Very pleased, and the extra fee for returning was reasonable.
+                                   I worked with Enrique before and found him to be conscientious and responsive. Highly recommend"
+                               </p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-4 md-3">
+                       <div class="card text-center carousel-cards m-5">
+                           <img class="carousel-cards-images" src="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_120x120_v2@2x.yji-48e1eaa758eb78c47d5c.png" alt="">
+                           <div class="card-body">
+                               <img class="yelp-review-stars py-2" src="{% static 'website/images/logos/yelp-5-star.png' %}">
+                               <h4>Susan M. <br> <span>Alamo, CA</span></h4>
+                               <p class="card-text">"I have used Enrique for many years. He is honest, reliable and has always done exceptional work."
+                               </p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+             </div>
+
+
+             <div class="carousel-item">
+               <div class="row p-8 p-md-4 p-lg-5">
+                   <div class="col-md-4 md-3">
+                       <div class="card text-center carousel-cards m-5">
+                           <img class="carousel-cards-images" src="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_120x120_v2@2x.yji-48e1eaa758eb78c47d5c.png" alt="">
+                           <div class="card-body">
+                               <img class="yelp-review-stars py-2" src="{% static 'website/images/logos/yelp-5-star.png' %}">
+                               <h4>Karen G. <br> <span>Lafayette, CA</span></h4>
+                               <p class="card-text">"Enrique has done work for us for years. The quality of his work is top notch. All of his crew are excellent.
+                                   He has done big jobs that require framing and building walls and painting large areas, and also smaller jobs. He can really do anything - and he
+                                   always does it well. I do not hesitate in giving him the highest rating and referring him to others."
+                               </p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-4 md-3">
+                       <div class="card text-center carousel-cards m-5">
+                           <img class="carousel-cards-images" src="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_120x120_v2@2x.yji-48e1eaa758eb78c47d5c.png" alt="">
+                           <div class="card-body">
+                               <img class="yelp-review-stars py-2" src="{% static 'website/images/logos/yelp-5-star.png' %}">
+                               <h4>Lorena M. <br> <span>Danville, CA</span></h4>
+                               <p class="card-text">"Enrique and his team did a fantastic job painting our iron gates around our house. Prepping, sanding, priming and painting iron gates is not an easy task. His team came on time
+                                   and worked diligently until the job was done."
+                               </p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-4 md-3">
+                       <div class="card text-center carousel-cards m-5">
+                           <img class="carousel-cards-images" src="https://s3-media0.fl.yelpcdn.com/assets/public/default_user_avatar_120x120_v2@2x.yji-48e1eaa758eb78c47d5c.png" alt="">
+                           <div class="card-body">
+                               <img class="yelp-review-stars py-2" src="{% static 'website/images/logos/yelp-5-star.png' %}">
+                               <h4>Desiree G. <br> <span>San Francisco Bay Area, CA</span></h4>
+                               <p class="card-text">
+                                "Enrique and his team have done several painting jobs at our house. He has done complete indoor and outdoor painting, including some siding replacement/repairs,
+                                in the last couple of years and the work is stellar.
+                                </p>
+                                <a class="btn btn-danger read-more-btn" data-bs-toggle="collapse" href="#collapseCard6" role="button" aria-expanded="false" aria-controls="collapseCard6">Read More</a>
+                                <div class="collapse mt-3" id="collapseCard6">
+                                    <!-- Extended text goes here -->
+                                    He is such a pleasure to deal with, as is his courteous team. He is also great at offering his educated opinion and recommendations
+                                    when the occasion arises. I know only the basics about painting and have relied heavily on him for several projects. He stands by his work. Showing up on time and completing the job
+                                    as quoted, time and money-wise. I recently had a new entry door installed with new framing and custom trim. I contracted with Enrique to stain the wood door, which is a week-long process,
+                                    along with painting the trim. It turned out fantastic and even more beautiful than anticipated. I could not be happier. I'll continue to use Rivas Painting and have no hesitation in recommending Enrique."
+                                    <!-- ... -->
+                                </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+             </div>
+
+
+           <button class="carousel-control-prev carousel-control-prev-home" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon text-black" aria-hidden="true"></span>
+             <span class="visually-hidden">Previous</span>
+           </button>
+           <button class="carousel-control-next carousel-control-next-home" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Next</span>
+           </button>
+         </div>
+    </div>
+</section>
+
+
+{% endblock content %}

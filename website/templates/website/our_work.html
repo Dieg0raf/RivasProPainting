@@ -1,0 +1,246 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--Interior Work-->
+<section id="inter-work-sec">
+  <div class="container d-flex flex-column text-center align-items-center">
+    <p class="section-name d-inline-block">Our Interior Work</p>
+    <small>(Click image to enlarge)</small>
+    
+    <div id="imageCarousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-item-work active">
+            <div class="row p-8 p-md-4 p-lg-5 car-work">
+                <div class="col-md-4 md-3">
+                    <div class="card c-item text-center">
+                        <img class="c-img" src="{% static 'website/images/interior-images-work/int-27.jpg' %}" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    </div>
+                </div>
+                <div class="col-md-4 md-3">
+                    <div class="card c-item text-center">
+                        <img class="c-img" src="{% static 'website/images/before-after-images/after-1.jpg' %}" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    </div>
+                </div>
+                <div class="col-md-4 md-3">
+                    <div class="card c-item text-center">
+                        <img class="c-img" src="{% static 'website/images/interior-images-work/int-6.jpg' %}" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="carousel-item carousel-item-work">
+            <div class="row p-8 p-md-4 p-lg-5 car-work">
+                <div class="col-md-4 md-3">
+                    <div class="card c-item text-center">
+                        <img class="c-img" src="{% static 'website/images/interior-images-work/int-24.jpg' %}" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    </div>
+                </div>
+                <div class="col-md-4 md-3">
+                    <div class="card c-item text-center">
+                        <img class="c-img" src="{% static 'website/images/interior-images-work/int-21.jpg' %}" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    </div>
+                </div>
+                <div class="col-md-4 md-3">
+                    <div class="card c-item text-center">
+                        <img class="c-img" src="{% static 'website/images/interior-images-work/int-3.jpg' %}" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon text-black" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <button id="toggleButton" class="btn btn-danger mb-3 p-sm-3">Load more images</button>
+      </div>
+    </div>
+    
+
+    <div class="row p-8 p-md-4 p-lg-5 image-container car-work">
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-28.jpg' %}" alt="Image 1" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-25.jpg' %}" alt="Image 1" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-29.jpg' %}" alt="Image 1" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-30.jpg' %}" alt="Image 1" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-22.jpg' %}" alt="Image 1" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-7.jpg' %}" alt="Image 1" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-8.jpg' %}" alt="Image 2" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-9.jpg' %}" alt="Image 3" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-10.jpg' %}" alt="Image 4" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-11.jpg' %}" alt="Image 5" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-12.jpg' %}" alt="Image 6" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-13.jpg' %}" alt="Image 7" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-14.jpg' %}" alt="Image 8" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-15.jpg' %}" alt="Image 9" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-16.jpg' %}" alt="Image 10" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-17.jpg' %}" alt="Image 11" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-18.jpg' %}" alt="Image 12" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-19.jpg' %}" alt="Image 13" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-20.jpg' %}" alt="Image 14" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-1.jpg' %}" alt="Image 15" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-5.jpg' %}" alt="Image 15" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-23.jpg' %}" alt="Image 15" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'website/images/interior-images-work/int-4.jpg' %}" alt="Image 15" class="img-fluid image m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Exterior Work-->
+<section id="exter-work-sec">
+  <div class="container d-flex flex-column text-center align-items-center">
+    <p class="section-name d-inline-block">Our Exterior Work</p>
+    <small>(Click image to enlarge)</small>
+    
+    <div id="imageCarousel2" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-item-work active">
+            <div class="row p-8 p-md-4 p-lg-5 car-work">
+                <div class="col-md-4 md-3">
+                    <div class="card c-item text-center">
+                        <img class="c-img" src="{% static 'website/images/exterior-images-work/ext-6.jpg' %}" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    </div>
+                </div>
+                <div class="col-md-4 md-3">
+                    <div class="card c-item text-center">
+                        <img class="c-img" src="{% static 'website/images/exterior-images-work/ext-2.jpg' %}" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    </div>
+                </div>
+                <div class="col-md-4 md-3">
+                    <div class="card c-item text-center">
+                        <img class="c-img" src="{% static 'website/images/exterior-images-work/exit-6.jpg' %}" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+
+
+        <div class="carousel-item carousel-item-work">
+          <div class="row p-8 p-md-4 p-lg-5 car-work">
+              <div class="col-md-4 md-3">
+                  <div class="card c-item text-center">
+                      <img class="c-img" src="{% static 'website/images/exterior-images-work/ext-4.jpg' %}" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  </div>
+              </div>
+              <div class="col-md-4 md-3">
+                  <div class="card c-item text-center">
+                      <img class="c-img" src="{% static 'website/images/exterior-images-work/ext-5.jpg' %}" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  </div>
+              </div>
+              <div class="col-md-4 md-3">
+                  <div class="card c-item text-center">
+                      <img class="c-img" src="{% static 'website/images/exterior-images-work/ext-1.jpg' %}" data-bs-toggle="modal" data-bs-target="#imageModal">
+                  </div>
+              </div>
+          </div>
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon text-black" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <button id="toggleButton2" class="btn btn-danger mb-3 p-sm-3">Load more images</button>
+        </div>
+      </div>
+    
+      <div class="row p-8 p-md-4 p-lg-5 image-container image-container2 car-work">
+        <div class="col-md-4">
+          <img src="{% static 'website/images/exterior-images-work/exit-7.jpg' %}" alt="Image 1" class="img-fluid image2 m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'website/images/interior-images-work/int-8.jpg' %}" alt="Image 2" class="img-fluid image2 m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        </div>
+        <div class="col-md-4">
+          <img src="{% static 'website/images/interior-images-work/int-9.jpg' %}" alt="Image 3" class="img-fluid image2 m-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        </div>
+      </div>
+
+      <!-- Modal for larger image -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModalLabel">Our Work</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Larger image inside the modal -->
+            <img id="modalImage" class="d-block w-100" alt="Enlarged Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+{% endblock content %}
+    
